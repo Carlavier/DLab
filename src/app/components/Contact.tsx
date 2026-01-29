@@ -143,47 +143,6 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div>
-                  <label
-                    htmlFor="projectType"
-                    className="block text-sm mb-2 text-slate-300 font-medium"
-                  >
-                    Loại dự án *
-                  </label>
-                  <select
-                    id="projectType"
-                    name="projectType"
-                    value={formData.projectType}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-5 py-4 rounded-xl border border-cyan-500/30 bg-slate-900/50 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition"
-                  >
-                    <option value="">-- Chọn loại dự án --</option>
-                    <option value="ai">Artificial Intelligence</option>
-                    <option value="blockchain">Blockchain</option>
-                    <option value="both">AI & Blockchain</option>
-                    <option value="other">Khác</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm mb-2 text-slate-300 font-medium"
-                  >
-                    Mô tả dự án
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={5}
-                    className="w-full px-5 py-4 rounded-xl border border-cyan-500/30 bg-slate-900/50 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent resize-none transition"
-                    placeholder="Mô tả ngắn gọn về dự án, mục tiêu và nhu cầu của bạn..."
-                  ></textarea>
-                </div>
-
                 <button
                   type="submit"
                   className="w-full group bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-5 rounded-xl hover:shadow-2xl hover:shadow-cyan-500/50 transition-all flex items-center justify-center gap-3 text-lg font-semibold"

@@ -44,16 +44,16 @@ export default function Hero() {
             <Sparkles className="w-5 h-5" />
             <ShinyText
               text="Sắp ra mắt tại Đà Nẵng"
-              speed={2}
-              delay={0}
+              speed={1.5}
+              delay={0.1}
               color="#b5b5b5"
               shineColor="#ffffff"
-              spread={200}
+              spread={100}
               direction="left"
-              yoyo={false}
+              yoyo={true}
               pauseOnHover={false}
               disabled={false}
-              className="font-medium"
+              className="font-extrabold"
             />
           </motion.div>
 
@@ -119,13 +119,13 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
             <a href="#contact">
-              <button className="group bg-gradient-to-r cursor-pointer from-cyan-500 to-blue-600 text-white px-10 py-5 rounded-[80px] hover:shadow-2xl hover:shadow-cyan-500/50 transition-all flex items-center gap-3 text-lg font-semibold">
+              <button className="group  cursor-pointer bg-cyan-500  text-white px-10 py-5 rounded-[80px] hover:shadow-2xl hover:shadow-cyan-500/50 transition-all flex items-center gap-3 text-lg font-semibold">
                 Tham gia DAB-Lab
                 <Rocket className="w-6 h-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </button>
             </a>
             <a href="#about">
-              <button className="border-2 border-cyan-500/50 text-cyan-400 px-10 py-5 rounded-xl hover:bg-cyan-500/10 transition-all text-lg font-semibold">
+              <button className="border-2 border-cyan-500/50 text-cyan-400 px-10 py-5 rounded-4xl cursor-pointer hover:bg-cyan-500/10 transition-all text-lg font-semibold">
                 Tìm hiểu thêm
               </button>
             </a>

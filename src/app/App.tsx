@@ -7,9 +7,9 @@ import Contact from "@/app/components/Contact";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen ">
       {/* Navigation - Fixed Header */}
-      <nav className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-xl z-50 border-b border-cyan-500/20">
+      <nav className="fixed top-0 left-0 right-0  backdrop-blur-xl z-50 border-b border-cyan-500/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center gap-3">
@@ -21,17 +21,39 @@ export default function App() {
                 <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
                   DAB-Lab
                 </span>
-                <div className="text-xs text-cyan-400/70">Da Nang AI & Blockchain Lab</div>
+                <div className="text-xs text-cyan-400/70">
+                  Da Nang AI & Blockchain Lab
+                </div>
               </div>
             </div>
             <div className="hidden md:flex gap-8">
-              <a href="#about" className="text-slate-300 hover:text-cyan-400 transition-colors">Giới thiệu</a>
-              <a href="#why" className="text-slate-300 hover:text-cyan-400 transition-colors">Lợi thế</a>
-              <a href="#who" className="text-slate-300 hover:text-cyan-400 transition-colors">Dành cho ai</a>
-              <a href="#contact" className="text-slate-300 hover:text-cyan-400 transition-colors">Liên hệ</a>
+              <a
+                href="#about"
+                className="text-slate-300 hover:text-cyan-400 transition-colors font-extrabold"
+              >
+                Giới thiệu
+              </a>
+              <a
+                href="#why"
+                className="text-slate-300 hover:text-cyan-400 transition-colors  font-extrabold"
+              >
+                Lợi thế
+              </a>
+              <a
+                href="#who"
+                className="text-slate-300 hover:text-cyan-400 transition-colors  font-extrabold"
+              >
+                Dành cho ai
+              </a>
+              <a
+                href="#contact"
+                className="text-slate-300 hover:text-cyan-400 transition-colors font-extrabold"
+              >
+                Liên hệ
+              </a>
             </div>
             <a href="#contact">
-              <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-3 rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition-all font-medium">
+              <button className=" bg-cyan-500  text-white px-6 py-3 rounded-3xl hover:shadow-lg hover:shadow-cyan-500/50 transition-all font-medium">
                 Tham gia ngay
               </button>
             </a>
@@ -65,7 +87,9 @@ export default function App() {
                 </div>
                 <div>
                   <div className="text-xl font-bold">DAB-Lab</div>
-                  <div className="text-xs text-cyan-400/70">Da Nang AI & Blockchain Lab</div>
+                  <div className="text-xs text-cyan-400/70">
+                    Da Nang AI & Blockchain Lab
+                  </div>
                 </div>
               </div>
               <p className="text-slate-400 leading-relaxed">
@@ -73,19 +97,39 @@ export default function App() {
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-cyan-400">Liên kết nhanh</h4>
+              <h4 className="font-semibold mb-4 text-cyan-400">
+                Liên kết nhanh
+              </h4>
               <ul className="space-y-3 text-slate-400">
-                <li><a href="#about" className="hover:text-cyan-400 transition">Giới thiệu</a></li>
-                <li><a href="#why" className="hover:text-cyan-400 transition">Lợi thế</a></li>
-                <li><a href="#who" className="hover:text-cyan-400 transition">Dành cho ai</a></li>
-                <li><a href="#contact" className="hover:text-cyan-400 transition">Liên hệ</a></li>
+                <li>
+                  <a href="#about" className="hover:text-cyan-400 transition">
+                    Giới thiệu
+                  </a>
+                </li>
+                <li>
+                  <a href="#why" className="hover:text-cyan-400 transition">
+                    Lợi thế
+                  </a>
+                </li>
+                <li>
+                  <a href="#who" className="hover:text-cyan-400 transition">
+                    Dành cho ai
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="hover:text-cyan-400 transition">
+                    Liên hệ
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4 text-cyan-400">Địa chỉ</h4>
               <p className="text-slate-400 leading-relaxed">
-                Trung tâm Phần mềm Đà Nẵng<br />
-                Đà Nẵng, Việt Nam<br />
+                Trung tâm Phần mềm Đà Nẵng
+                <br />
+                Đà Nẵng, Việt Nam
+                <br />
                 <span className="text-cyan-400">Hub công nghệ miền Trung</span>
               </p>
             </div>
