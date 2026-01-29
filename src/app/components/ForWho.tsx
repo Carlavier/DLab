@@ -5,7 +5,6 @@ import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 
 const targetAudience = [
   {
-    icon: Rocket,
     title: "Startup AI/Blockchain",
     description:
       "Đang tìm môi trường thử nghiệm, phát triển sản phẩm và tiếp cận thị trường",
@@ -14,7 +13,6 @@ const targetAudience = [
     benefits: ["Môi trường sandbox", "Chi phí thấp", "Hỗ trợ pháp lý"],
   },
   {
-    icon: Building,
     title: "Công ty công nghệ",
     description: "Muốn R&D tại Việt Nam với chi phí tối ưu và chất lượng cao",
     color: "from-blue-500 to-purple-500",
@@ -22,7 +20,6 @@ const targetAudience = [
     benefits: ["Nguồn nhân lực", "Hạ tầng hiện đại", "Chính sách ưu đãi"],
   },
   {
-    icon: Globe,
     title: "Team quốc tế",
     description:
       "Cần base tại Đông Nam Á để phát triển và mở rộng thị trường khu vực",
@@ -31,7 +28,6 @@ const targetAudience = [
     benefits: ["Vị trí chiến lược", "Visa support", "Cộng đồng expat"],
   },
   {
-    icon: Lightbulb,
     title: "Doanh nghiệp",
     description:
       "Muốn pilot giải pháp AI trong khuôn khổ sandbox và chuyển đổi số",
@@ -75,9 +71,12 @@ export default function ForWho() {
 
         {/* Target Audience Cards */}
         <div className="mb-20">
-          <ScrollStack useWindowScroll className="overflow-visible" blurAmount={90}>
+          <ScrollStack
+            useWindowScroll
+            className="overflow-visible"
+            blurAmount={90}
+          >
             {targetAudience.map((target, index) => {
-              const Icon = target.icon;
               const isOdd = (index + 1) % 2 === 1;
               return (
                 <ScrollStackItem
@@ -105,11 +104,6 @@ export default function ForWho() {
                         </div>
 
                         <div className="w-full lg:w-1/2 flex flex-col">
-                          <div
-                            className={`w-20 h-20 bg-gradient-to-br ${target.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
-                          >
-                            <Icon className="w-10 h-10 text-white" />
-                          </div>
                           <h3 className="text-2xl md:text-3xl mb-4 text-white font-semibold">
                             {target.title}
                           </h3>
