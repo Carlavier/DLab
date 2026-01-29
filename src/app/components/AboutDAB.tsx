@@ -120,11 +120,11 @@ export default function AboutDAB() {
         </div>
 
         {/* Tech Focus */}
-        <ScrollAnimation delay={0.2}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="relative group">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <ScrollAnimation delay={0.2} className="h-full">
+            <div className="relative group h-full">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity"></div>
-              <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-8 rounded-2xl border border-cyan-500/30 hover:border-cyan-500/60 transition-all">
+              <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-8 rounded-2xl border border-cyan-500/30 hover:border-cyan-500/60 transition-all h-full">
                 <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center mb-6">
                   <svg
                     className="w-8 h-8 text-white"
@@ -150,10 +150,12 @@ export default function AboutDAB() {
                 </p>
               </div>
             </div>
+          </ScrollAnimation>
 
-            <div className="relative group">
+          <ScrollAnimation delay={0.4} className="h-full">
+            <div className="relative group h-full">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity"></div>
-              <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-8 rounded-2xl border border-blue-500/30 hover:border-blue-500/60 transition-all">
+              <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-8 rounded-2xl border border-blue-500/30 hover:border-blue-500/60 transition-all h-full">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center mb-6">
                   <svg
                     className="w-8 h-8 text-white"
@@ -178,8 +180,8 @@ export default function AboutDAB() {
                 </p>
               </div>
             </div>
-          </div>
-        </ScrollAnimation>
+          </ScrollAnimation>
+        </div>
       </div>
     </section>
   );

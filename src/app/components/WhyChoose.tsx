@@ -2,6 +2,7 @@ import { Shield, DollarSign, Heart, Network } from "lucide-react";
 import ScrollAnimation from "@/app/components/ScrollAnimation";
 import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 import CountUp from "@/components/CountUp";
+import ScrollFloat from "@/components/ScrollFloat";
 
 export default function WhyChoose() {
   const advantages = [
@@ -159,7 +160,7 @@ export default function WhyChoose() {
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-blue-600/20 rounded-3xl blur-2xl"></div>
               <div className="relative rounded-3xl overflow-hidden border border-cyan-500/30">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1737423808372-37f1f5bcc387?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxEYSUyME5hbmclMjBjaXR5JTIwc2t5bGluZXxlbnwxfHx8fDE3Njk2NDk2OTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src="/public/assets/img/bridge.jpg"
                   alt="Da Nang City"
                   className="w-full h-[500px] object-cover"
                 />
@@ -169,7 +170,6 @@ export default function WhyChoose() {
           </div>
         </ScrollAnimation>
 
-        {/* Stats Bar */}
         <ScrollAnimation delay={0.4}>
           <div className="mt-20 bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-purple-500/10 border border-cyan-500/30 rounded-3xl p-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
