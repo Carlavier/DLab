@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Send, Calendar, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Send, ArrowRight } from "lucide-react";
 import ScrollAnimation from "@/app/components/ScrollAnimation";
 import { useState } from "react";
 
@@ -31,48 +31,43 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-32 bg-black relative overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
-      </div>
-
+    <section id="contact" className="py-24 bg-black relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <ScrollAnimation>
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 text-cyan-400 px-4 py-2 rounded-full mb-6">
-              <Send className="w-4 h-4" />
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 border border-zinc-800 bg-zinc-900/50 text-zinc-300 px-4 py-1.5 rounded-full mb-6">
+              <Send className="w-3.5 h-3.5" />
               <span className="text-sm font-medium">Liên hệ với chúng tôi</span>
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-white">
-              Sẵn sàng build cùng{" "}
-              <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-bold">
-                DAB-Lab?
-              </span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white tracking-tight">
+              Sẵn sàng build cùng DAB-Lab?
             </h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
               Đăng ký tham quan Lab hoặc đặt lịch trao đổi. Cùng xây dựng tương
               lai AI tại Đà Nẵng.
             </p>
           </div>
         </ScrollAnimation>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-          {/* Contact Form - Takes 2 columns */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 mb-12">
+          {/* Contact Form */}
           <ScrollAnimation delay={0.2} className="lg:col-span-2">
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl border border-cyan-500/30 p-8 md:p-12">
-              <h3 className="text-3xl mb-8 text-white font-semibold">
+            <div className="relative bg-zinc-900/90 backdrop-blur-md rounded-2xl border border-zinc-700/50 p-6 md:p-10 overflow-hidden shadow-2xl shadow-white/5">
+              <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-zinc-800/50 rounded-full blur-[80px] -mr-20 -mt-20 pointer-events-none"></div>
+              <div className="absolute bottom-0 left-0 w-[200px] h-[200px] bg-zinc-800/50 rounded-full blur-[60px] -ml-10 -mb-10 pointer-events-none"></div>
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+              
+              <h3 className="relative z-10 text-2xl mb-8 text-white font-semibold flex items-center gap-3">
                 Đăng ký tham gia
               </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
+                  <div className="space-y-2">
                     <label
                       htmlFor="name"
-                      className="block text-sm mb-2 text-slate-300 font-medium"
+                      className="text-sm text-zinc-400 font-medium"
                     >
-                      Họ và tên *
+                      Họ và tên <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="text"
@@ -81,16 +76,16 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-5 py-4 rounded-xl border border-cyan-500/30 bg-slate-900/50 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition"
+                      className="w-full px-4 py-3 rounded-lg border border-zinc-800 bg-zinc-950 text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-white/20 focus:border-white/40 transition duration-200"
                       placeholder="Nguyễn Văn A"
                     />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <label
                       htmlFor="email"
-                      className="block text-sm mb-2 text-slate-300 font-medium"
+                      className="text-sm text-zinc-400 font-medium"
                     >
-                      Email *
+                      Email <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="email"
@@ -99,19 +94,19 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-5 py-4 rounded-xl border border-cyan-500/30 bg-slate-900/50 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition"
+                      className="w-full px-4 py-3 rounded-lg border border-zinc-800 bg-zinc-950 text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-white/20 focus:border-white/40 transition duration-200"
                       placeholder="email@example.com"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
+                  <div className="space-y-2">
                     <label
                       htmlFor="company"
-                      className="block text-sm mb-2 text-slate-300 font-medium"
+                      className="text-sm text-zinc-400 font-medium"
                     >
-                      Công ty/Tổ chức *
+                      Công ty/Tổ chức <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="text"
@@ -120,14 +115,14 @@ export default function Contact() {
                       value={formData.company}
                       onChange={handleChange}
                       required
-                      className="w-full px-5 py-4 rounded-xl border border-cyan-500/30 bg-slate-900/50 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition"
+                      className="w-full px-4 py-3 rounded-lg border border-zinc-800 bg-zinc-950 text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-white/20 focus:border-white/40 transition duration-200"
                       placeholder="Tên công ty"
                     />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <label
                       htmlFor="phone"
-                      className="block text-sm mb-2 text-slate-300 font-medium"
+                      className="text-sm text-zinc-400 font-medium"
                     >
                       Số điện thoại
                     </label>
@@ -137,39 +132,40 @@ export default function Contact() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-5 py-4 rounded-xl border border-cyan-500/30 bg-slate-900/50 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition"
-                      placeholder="+84 xxx xxx xxx"
+                      className="w-full px-4 py-3 rounded-lg border border-zinc-800 bg-zinc-950 text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-white/20 focus:border-white/40 transition duration-200"
+                      placeholder="+84..."
                     />
                   </div>
                 </div>
 
-                <button
-                  type="submit"
-                  className="w-full group bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-5 rounded-xl hover:shadow-2xl hover:shadow-cyan-500/50 transition-all flex items-center justify-center gap-3 text-lg font-semibold"
-                >
-                  Gửi đăng ký
-                  <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-                </button>
+                <div className="pt-4">
+                  <button
+                    type="submit"
+                    className="w-full md:w-auto px-8 py-3.5 bg-white text-black rounded-lg hover:bg-zinc-200 transition-colors duration-200 flex items-center justify-center gap-2 font-semibold text-sm"
+                  >
+                    Gửi đăng ký
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </div>
               </form>
             </div>
           </ScrollAnimation>
 
-          {/* Contact Info - Takes 1 column */}
+          {/* Contact Info */}
           <ScrollAnimation delay={0.4} className="lg:col-span-1">
-            <div className="space-y-6">
-              {/* Contact Information Card */}
-              <div className="bg-gradient-to-br from-cyan-500 to-blue-600 rounded-3xl p-8 text-white">
-                <h3 className="text-2xl mb-6 font-semibold">
+            <div className="h-full flex flex-col gap-6">
+              <div className="bg-zinc-900/50 backdrop-blur-sm rounded-2xl border border-zinc-800 p-8 flex-1">
+                <h3 className="text-xl mb-6 text-white font-semibold">
                   Thông tin liên hệ
                 </h3>
-                <div className="space-y-6">
+                <div className="space-y-8">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6" />
+                    <div className="w-10 h-10 bg-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0 text-white">
+                      <MapPin className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="font-semibold mb-1">Địa chỉ</div>
-                      <div className="text-cyan-50 text-sm leading-relaxed">
+                      <div className="font-medium text-white mb-1">Địa chỉ</div>
+                      <div className="text-zinc-400 text-sm leading-relaxed">
                         Trung tâm Phần mềm Đà Nẵng
                         <br />
                         Đà Nẵng, Việt Nam
@@ -177,12 +173,12 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6" />
+                    <div className="w-10 h-10 bg-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0 text-white">
+                      <Mail className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="font-semibold mb-1">Email</div>
-                      <div className="text-cyan-50 text-sm">
+                      <div className="font-medium text-white mb-1">Email</div>
+                      <div className="text-zinc-400 text-sm">
                         contact@dablab.vn
                         <br />
                         info@dablab.vn
@@ -190,53 +186,29 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6" />
+                    <div className="w-10 h-10 bg-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0 text-white">
+                      <Phone className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="font-semibold mb-1">Điện thoại</div>
-                      <div className="text-cyan-50 text-sm">
+                      <div className="font-medium text-white mb-1">Điện thoại</div>
+                      <div className="text-zinc-400 text-sm">
                         +84 236 XXX XXXX
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <div className="bg-zinc-800 rounded-2xl p-8 border border-zinc-700/50">
+                 <h4 className="text-white font-bold text-lg mb-2">Tham gia cộng đồng</h4>
+                 <p className="text-zinc-400 text-sm mb-4">Kết nối với các chuyên gia AI khác tại Đà Nẵng.</p>
+                  <button className="text-sm font-semibold text-white underline underline-offset-4 hover:text-zinc-300">
+                   Tìm hiểu thêm →
+                 </button>
+              </div>
             </div>
           </ScrollAnimation>
         </div>
-
-        {/* CTA Banner */}
-        <ScrollAnimation delay={0.6}>
-          <div className="relative overflow-hidden rounded-3xl">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600"></div>
-            <div
-              className="absolute inset-0 opacity-20"
-              style={{
-                backgroundImage:
-                  "linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)",
-                backgroundSize: "50px 50px",
-              }}
-            ></div>
-            <div className="relative px-8 py-12 md:px-12 md:py-16 text-center">
-              <h3 className="text-3xl md:text-4xl mb-4 text-white font-bold">
-                Cùng xây dựng tương lai AI tại Đà Nẵng
-              </h3>
-              <p className="text-xl text-cyan-50 mb-8 max-w-2xl mx-auto">
-                Tham gia DAB-Lab ngay hôm nay và trở thành một phần của cuộc
-                cách mạng công nghệ
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-white text-cyan-600 px-8 py-4 rounded-xl hover:bg-cyan-50 transition text-lg font-semibold">
-                  Tham gia DAB-Lab
-                </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-xl hover:bg-white/10 transition text-lg font-semibold">
-                  Tìm hiểu thêm
-                </button>
-              </div>
-            </div>
-          </div>
-        </ScrollAnimation>
       </div>
     </section>
   );
