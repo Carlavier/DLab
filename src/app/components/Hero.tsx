@@ -5,11 +5,14 @@ import TextType from "./ui/TextType";
 import SplitText from "@/components/SplitText";
 import ShinyText from "@/components/ShinyText";
 import CountUp from "@/components/CountUp";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation();
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
   };
+  const slogans=t('hero.textType', { returnObjects: true }) as string[]
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0">
@@ -42,7 +45,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500/10 to-blue-600/10 border border-cyan-500/30 text-cyan-400 px-6 py-3 rounded-full mb-8"
           >
             <ShinyText
-              text="Sắp ra mắt tại Đà Nẵng"
+              text={t('hero.comingSoon')}
               speed={1.5}
               delay={0.1}
               color="#b5b5b5"
@@ -76,13 +79,13 @@ export default function Hero() {
               onLetterAnimationComplete={handleAnimationComplete}
             >
               <span className="text-white font-bold text-4xl md:text-7xl lg:text-8xl">
-                DAB-Lab
+                {t('hero.title1')}
               </span>
               <div className="text-blue-400/80  font-bold text-4xl md:text-7xl lg:text-8xl">
-                AI &amp; Blockchain
+                {t('hero.title2')}
               </div>
               <span className="text-white font-bold text-4xl md:text-7xl lg:text-8xl">
-                Innovation Hub
+                {t('hero.title3')}
               </span>
             </SplitText>
           </motion.h1>
@@ -94,10 +97,7 @@ export default function Hero() {
             className="text-xl md:text-2xl text-slate-300 mb-12 max-w-4xl mx-auto leading-relaxed"
           >
             <TextType
-              text={[
-                "Không gian nghiên cứu và phát triển đặt tại Trung tâm Phần mềm Đà Nẵng",
-                "Hub công nghệ năng động nhất miền Trung Việt Nam",
-              ]}
+              text={slogans}
               typingSpeed={65}
               pauseDuration={2900}
               showCursor
@@ -119,13 +119,13 @@ export default function Hero() {
           >
             <a href="#contact">
               <button className="group  cursor-pointer btn-dab-navy  text-white px-10 py-5 rounded-[80px] hover:shadow-2xl hover:shadow-cyan-500/50 transition-all flex items-center gap-3 text-lg font-semibold">
-                Tham gia DAB-Lab
+                {t('hero.cta_join')}
                 <Rocket className="w-6 h-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </button>
             </a>
             <a href="#about">
               <button className="border-2 border-cyan-500/50 text-cyan-400 px-10 py-5 rounded-4xl cursor-pointer hover:bg-cyan-500/10 transition-all text-lg font-semibold">
-                Tìm hiểu thêm
+                {t('hero.cta_learn')}
               </button>
             </a>
           </motion.div>
@@ -158,25 +158,25 @@ export default function Hero() {
                 />
                 %
               </div>
-              <div className="text-sm text-slate-400">Chi phí thấp hơn</div>
+              <div className="text-sm text-slate-400">{t('hero.stat1_label')}</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">
                 #1
               </div>
-              <div className="text-sm text-slate-400">Hub miền Trung</div>
+              <div className="text-sm text-slate-400">{t('hero.stat2_label')}</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">
                 Sandbox
               </div>
-              <div className="text-sm text-slate-400">Chính sách đặc thù</div>
+              <div className="text-sm text-slate-400">{t('hero.stat3_label')}</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">
                 24/7
               </div>
-              <div className="text-sm text-slate-400">Môi trường Lab</div>
+              <div className="text-sm text-slate-400">{t('hero.stat4_label')}</div>
             </div>
           </motion.div>
         </div>
@@ -192,7 +192,7 @@ export default function Hero() {
             href="#about"
             className="flex flex-col items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
           >
-            <span className="text-sm">Khám phá</span>
+            <span className="text-sm">{t('hero.explore')}</span>
             <ChevronDown className="w-6 h-6 animate-bounce" />
           </a>
         </motion.div>

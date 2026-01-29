@@ -4,8 +4,13 @@ import AboutDAB from "@/app/components/AboutDAB";
 import WhyChoose from "@/app/components/WhyChoose";
 import ForWho from "@/app/components/ForWho";
 import Contact from "@/app/components/Contact";
+import LanguageSwitcher from "@/app/components/LanguageSwitcher";
+import LanguageTest from "@/app/components/LanguageTest";
+import { useTranslation } from "react-i18next";
 
 export default function App() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen ">
       {/* Navigation - Fixed Header */}
@@ -23,35 +28,38 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <div className="hidden md:flex gap-8">
-              <a
-                href="#about"
-                className="text-slate-300 hover:text-cyan-600 transition-colors font-extrabold"
-              >
-                Giới thiệu
-              </a>
-              <a
-                href="#why"
-                className="text-slate-300 hover:text-cyan-600 transition-colors  font-extrabold"
-              >
-                Lợi thế
-              </a>
-              <a
-                href="#who"
-                className="text-slate-300 hover:text-cyan-600 transition-colors  font-extrabold"
-              >
-                Dành cho ai
-              </a>
-              <a
-                href="#contact"
-                className="text-slate-300 hover:text-cyan-600 transition-colors font-extrabold"
-              >
-                Liên hệ
-              </a>
+            <div className="flex gap-8 items-center">
+              <div className="hidden md:flex gap-8">
+                <a
+                  href="#about"
+                  className="text-slate-300 hover:text-cyan-600 transition-colors font-extrabold"
+                >
+                  {t('nav.about')}
+                </a>
+                <a
+                  href="#why"
+                  className="text-slate-300 hover:text-cyan-600 transition-colors  font-extrabold"
+                >
+                  {t('nav.why')}
+                </a>
+                <a
+                  href="#who"
+                  className="text-slate-300 hover:text-cyan-600 transition-colors  font-extrabold"
+                >
+                  {t('nav.who')}
+                </a>
+                <a
+                  href="#contact"
+                  className="text-slate-300 hover:text-cyan-600 transition-colors font-extrabold"
+                >
+                  {t('nav.contact')}
+                </a>
+              </div>
+              <LanguageSwitcher />
             </div>
             <a href="#contact">
               <button className="btn-dab-navy px-6 py-3 rounded-3xl hover:shadow-lg hover:shadow-cyan-500/50 transition-all font-medium">
-                Tham gia ngay
+                {t('nav.join')}
               </button>
             </a>
           </div>
@@ -90,51 +98,51 @@ export default function App() {
                 </div>
               </div>
               <p className="text-slate-400 leading-relaxed">
-                Xây dựng tương lai AI & Blockchain tại Đà Nẵng
+                {t('footer.slogan')}
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4 text-cyan-400">
-                Liên kết nhanh
+                {t('footer.quickLinks')}
               </h4>
               <ul className="space-y-3 text-slate-400">
                 <li>
                   <a href="#about" className="hover:text-cyan-400 transition">
-                    Giới thiệu
+                    {t('nav.about')}
                   </a>
                 </li>
                 <li>
                   <a href="#why" className="hover:text-cyan-400 transition">
-                    Lợi thế
+                    {t('nav.why')}
                   </a>
                 </li>
                 <li>
                   <a href="#who" className="hover:text-cyan-400 transition">
-                    Dành cho ai
+                    {t('nav.who')}
                   </a>
                 </li>
                 <li>
                   <a href="#contact" className="hover:text-cyan-400 transition">
-                    Liên hệ
+                    {t('nav.contact')}
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-cyan-400">Địa chỉ</h4>
+              <h4 className="font-semibold mb-4 text-cyan-400">{t('footer.address')}</h4>
               <p className="text-slate-400 leading-relaxed">
-                Trung tâm Phần mềm Đà Nẵng
+                {t('footer.addressText')}
                 <br />
-                Đà Nẵng, Việt Nam
+                {t('footer.city')}
                 <br />
-                <span className="text-cyan-400">Hub công nghệ miền Trung</span>
+                <span className="text-cyan-400">{t('footer.innovationHub')}</span>
               </p>
             </div>
           </div>
           <div className="border-t border-slate-800 pt-8">
             <div className="text-center">
               <p className="text-slate-400 mb-2">
-                &copy; 2026 DAB-Lab. Cùng xây dựng tương lai AI tại Đà Nẵng.
+                &copy; 2026 DAB-Lab. {t('footer.copyright')}
               </p>
               <p className="text-xs text-slate-500">
                 Da Nang AI & Blockchain Lab - Innovation Hub in Central Vietnam

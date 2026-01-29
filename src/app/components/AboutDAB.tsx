@@ -4,26 +4,25 @@ import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 import BlurText from "@/components/BlurText";
 import CardSwap, { Card } from "@/components/CardSwap";
 import Gallery from "./Gallery";
+import { useTranslation } from "react-i18next";
 
 export default function AboutDAB() {
+  const { t } = useTranslation();
   const features = [
     {
       icon: Building2,
-      title: "Project-Based",
-      description:
-        "Các công ty tham gia theo dạng project-based, linh hoạt và hiệu quả",
+      title: t('aboutDAB.features.0.title'),
+      description: t('aboutDAB.features.0.description'),
     },
     {
       icon: Shield,
-      title: "Chính sách Sandbox",
-      description:
-        "Được hưởng chính sách sandbox của thành phố về AI và công nghệ mới",
+      title: t('aboutDAB.features.1.title'),
+      description: t('aboutDAB.features.1.description'),
     },
     {
       icon: Zap,
-      title: "Môi trường thử nghiệm",
-      description:
-        "Môi trường linh hoạt, giảm rào cản pháp lý, tăng tốc innovation",
+      title: t('aboutDAB.features.2.title'),
+      description: t('aboutDAB.features.2.description'),
     },
   ];
 
@@ -43,12 +42,12 @@ export default function AboutDAB() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 px-4 py-2 rounded-full mb-6">
               <Lightbulb className="w-4 h-4" />
-              <span className="text-sm font-medium">Về DAB-Lab</span>
+              <span className="text-sm font-medium">{t('aboutDAB.badge')}</span>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-white">
-              Giới thiệu{" "}
+              {t('aboutDAB.titlePrefix')}{" "}
               <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-bold">
-                DAB-Lab
+                {t('aboutDAB.titleSuffix')}
               </span>
             </h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
@@ -56,7 +55,7 @@ export default function AboutDAB() {
                 DAB-Lab (Da Nang AI & Blockchain Lab)
               </div>
               <BlurText
-                text="Không gian nghiên cứu và phát triển đặt tại Trung tâm Phần mềm Đà Nẵng — hub công nghệ năng động nhất miền Trung Việt Nam."
+                text={t('aboutDAB.description')}
                 delay={100}
                 animateBy="words"
                 direction="top"

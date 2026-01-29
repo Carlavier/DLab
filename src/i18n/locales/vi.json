@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "about": "Giới thiệu",
+    "why": "Lợi thế",
+    "who": "Dành cho ai",
+    "contact": "Liên hệ",
+    "join": "Tham gia ngay"
+  },
+  "hero": {
+    "comingSoon": "Sắp ra mắt tại Đà Nẵng",
+    "title1": "DAB-Lab",
+    "title2": "AI & Blockchain",
+    "title3": "Innovation Hub",
+    "textType": [
+      "Không gian nghiên cứu và phát triển đặt tại Trung tâm Phần mềm Đà Nẵng",
+      "Hub công nghệ năng động nhất miền Trung Việt Nam"
+    ],
+    "stats": {
+      "members": "Thành viên",
+      "projects": "Dự án",
+      "events": "Sự kiện"
+    },
+    "cta_join": "Tham gia DAB-Lab",
+    "cta_learn": "Tìm hiểu thêm",
+    "stat1_label": "Chi phí thấp hơn",
+    "stat2_label": "Hub miền Trung",
+    "stat3_label": "Chính sách đặc thù",
+    "stat4_label": "Môi trường Lab",
+    "explore": "Khám phá"
+  },
+  "aboutDAB": {
+    "badge": "Về DAB-Lab",
+    "titlePrefix": "Giới thiệu",
+    "titleSuffix": "DAB-Lab",
+    "description": "Không gian nghiên cứu và phát triển đặt tại Trung tâm Phần mềm Đà Nẵng — hub công nghệ năng động nhất miền Trung Việt Nam.",
+    "features": [
+      {
+        "title": "Project-Based",
+        "description": "Các công ty tham gia theo dạng project-based, linh hoạt và hiệu quả"
+      },
+      {
+        "title": "Chính sách Sandbox",
+        "description": "Được hưởng chính sách sandbox của thành phố về AI và công nghệ mới"
+      },
+      {
+        "title": "Môi trường thử nghiệm",
+        "description": "Môi trường linh hoạt, giảm rào cản pháp lý, tăng tốc innovation"
+      }
+    ]
+  },
+  "footer": {
+    "slogan": "Xây dựng tương lai AI & Blockchain tại Đà Nẵng",
+    "quickLinks": "Liên kết nhanh",
+    "address": "Địa chỉ",
+    "addressText": "Trung tâm Phần mềm Đà Nẵng",
+    "city": "Đà Nẵng, Việt Nam",
+    "innovationHub": "Hub công nghệ miền Trung",
+    "copyright": "Cùng xây dựng tương lai AI tại Đà Nẵng."
+  }
+}

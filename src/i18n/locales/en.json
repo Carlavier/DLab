@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "about": "About",
+    "why": "Benefits",
+    "who": "For Who",
+    "contact": "Contact",
+    "join": "Join Now"
+  },
+  "hero": {
+    "comingSoon": "Coming soon to Da Nang",
+    "title1": "DAB-Lab",
+    "title2": "AI & Blockchain",
+    "title3": "Innovation Hub",
+    "textType": [
+      "R&D space located at Da Nang Software Center",
+      "The most dynamic technology hub in Central Vietnam"
+    ],
+    "stats": {
+      "members": "Members",
+      "projects": "Projects",
+      "events": "Events"
+    },
+    "cta_join": "Join DAB-Lab",
+    "cta_learn": "Learn More",
+    "stat1_label": "Lower costs",
+    "stat2_label": "Central Hub",
+    "stat3_label": "Unique Policy",
+    "stat4_label": "Lab Environment",
+    "explore": "Explore"
+  },
+  "aboutDAB": {
+    "badge": "About DAB-Lab",
+    "titlePrefix": "Introduction to",
+    "titleSuffix": "DAB-Lab",
+    "description": "R&D space located at the Da Nang Software Center — the most dynamic technology hub in Central Vietnam.",
+    "features": [
+      {
+        "title": "Project-Based",
+        "description": "Participating companies on a project-basis, flexible and efficient"
+      },
+      {
+        "title": "Sandbox Policy",
+        "description": "Benefit from the city's sandbox policy for AI and new technologies"
+      },
+      {
+        "title": "Testing Environment",
+        "description": "Flexible environment, reduced legal barriers, accelerated innovation"
+      }
+    ]
+  },
+  "footer": {
+    "slogan": "Building the future of AI & Blockchain in Da Nang",
+    "quickLinks": "Quick Links",
+    "address": "Address",
+    "addressText": "Da Nang Software Center",
+    "city": "Da Nang, Vietnam",
+    "innovationHub": "Central Vietnam Technology Hub",
+    "copyright": "Building the future of AI in Da Nang together."
+  }
+}
