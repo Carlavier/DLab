@@ -29,25 +29,25 @@ export default function App() {
             <div className="hidden md:flex gap-8">
               <a
                 href="#about"
-                className="text-slate-300 hover:text-cyan-400 transition-colors font-extrabold"
+                className="text-slate-300 hover:text-cyan-600 transition-colors font-extrabold"
               >
                 Giới thiệu
               </a>
               <a
                 href="#why"
-                className="text-slate-300 hover:text-cyan-400 transition-colors  font-extrabold"
+                className="text-slate-300 hover:text-cyan-600 transition-colors  font-extrabold"
               >
                 Lợi thế
               </a>
               <a
                 href="#who"
-                className="text-slate-300 hover:text-cyan-400 transition-colors  font-extrabold"
+                className="text-slate-300 hover:text-cyan-600 transition-colors  font-extrabold"
               >
                 Dành cho ai
               </a>
               <a
                 href="#contact"
-                className="text-slate-300 hover:text-cyan-400 transition-colors font-extrabold"
+                className="text-slate-300 hover:text-cyan-600 transition-colors font-extrabold"
               >
                 Liên hệ
               </a>
