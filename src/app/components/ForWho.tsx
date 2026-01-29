@@ -75,7 +75,7 @@ export default function ForWho() {
 
         {/* Target Audience Cards */}
         <div className="mb-20">
-          <ScrollStack useWindowScroll className="overflow-visible">
+          <ScrollStack useWindowScroll className="overflow-visible" blurAmount={90}>
             {targetAudience.map((target, index) => {
               const Icon = target.icon;
               const isOdd = (index + 1) % 2 === 1;
