@@ -35,11 +35,11 @@ export default function LanguageSwitcher() {
       {isOpen && (
         <>
           {/* Overlay to close dropdown */}
-          <div 
-            className="fixed inset-0 z-10" 
+          <div
+            className="fixed inset-0 z-10"
             onClick={() => setIsOpen(false)}
           />
-          
+
           {/* Dropdown menu */}
           <div className="absolute right-0 top-full mt-2 bg-white border border-green-200 rounded-lg shadow-lg min-w-[160px] z-20">
             {languages.map((lang) => (
