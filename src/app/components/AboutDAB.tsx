@@ -1,177 +1,152 @@
-import { Building2, Lightbulb, Shield, Zap } from "lucide-react";
-import ScrollAnimation from "@/app/components/ScrollAnimation";
+import { Users, Globe, Lightbulb, MapPin, Award, Shield, Network } from "lucide-react";
 import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
-import BlurText from "@/components/BlurText";
-import CardSwap, { Card } from "@/components/CardSwap";
-import Gallery from "./Gallery";
 import { useTranslation } from "react-i18next";
 
 export default function AboutDAB() {
   const { t } = useTranslation();
-  const features = [
-    {
-      icon: Building2,
-      title: t('aboutDAB.features.0.title'),
-      description: t('aboutDAB.features.0.description'),
-    },
-    {
-      icon: Shield,
-      title: t('aboutDAB.features.1.title'),
-      description: t('aboutDAB.features.1.description'),
-    },
-    {
-      icon: Zap,
-      title: t('aboutDAB.features.2.title'),
-      description: t('aboutDAB.features.2.description'),
-    },
-  ];
 
   return (
-    <section
-      id="about"
-      className="py-32 bg-gradient-to-b from-black via-slate-900 to-black relative overflow-hidden"
-    >
-      {/* Background Effects */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600 rounded-full blur-3xl"></div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <ScrollAnimation>
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 px-4 py-2 rounded-full mb-6">
-              <Lightbulb className="w-4 h-4" />
-              <span className="text-sm font-medium">{t('aboutDAB.badge')}</span>
-            </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-white">
-              {t('aboutDAB.titlePrefix')}{" "}
-              <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-bold">
-                {t('aboutDAB.titleSuffix')}
-              </span>
-            </h2>
-            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              <div className="text-cyan-400 font-semibold mb-8">
-                DAB-Lab (Da Nang AI & Blockchain Lab)
-              </div>
-              <BlurText
-                text={t('aboutDAB.description')}
-                delay={100}
-                animateBy="words"
-                direction="top"
-                onAnimationComplete={() => {
-                  console.log("Animation completed!");
-                }}
-                className="text-2xl mb-8 text-center"
-              />
-            </p>
+    <section id="about" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Hero Section */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-600 px-4 py-2 rounded-full mb-6">
+            <Lightbulb className="w-4 h-4" />
+            <span className="text-sm font-medium">{t('aboutDAB.badge')}</span>
           </div>
-        </ScrollAnimation>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+            {t('aboutDAB.title')}
+          </h2>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            {t('aboutDAB.subtitle')}
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-          <ScrollAnimation delay={0.2}>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-blue-600/20 rounded-3xl blur-2xl"></div>
-              <div className="relative rounded-3xl overflow-hidden border border-cyan-500/30">
+        {/* DFL Section */}
+        <div className="mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="rounded-2xl overflow-hidden border border-green-200 shadow-lg">
+              <ImageWithFallback
+                src="/assets/img/city.jpg"
+                alt="Da Nang Fintech Lab"
+                className="w-full h-[400px] object-cover"
+              />
+            </div>
+            <div>
+              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-green-600">
+                {t('aboutDAB.dflTitle')}
+              </h3>
+              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                {t('aboutDAB.dflDescription')}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Team Features */}
+        <div className="mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {(t('aboutDAB.teamFeatures', { returnObjects: true }) as any[]).map((feature, index) => (
+              <div
+                key={index}
+                className="bg-green-50 p-8 rounded-2xl border border-green-200 hover:shadow-lg transition-all"
+              >
+                <div className="w-14 h-14 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                  {index === 0 && <Users className="w-7 h-7 text-white" />}
+                  {index === 1 && <MapPin className="w-7 h-7 text-white" />}
+                  {index === 2 && <Award className="w-7 h-7 text-white" />}
+                </div>
+                <h4 className="text-xl mb-3 text-gray-900 font-semibold">
+                  {feature.title}
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Da Nang Section */}
+        <div className="mb-20">
+          <div className="bg-green-50 rounded-3xl p-8 md:p-12 border border-green-200">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+              <div>
+                <h3 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                  {t('aboutDAB.danangTitle')}
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  {t('aboutDAB.danangDescription')}
+                </p>
+              </div>
+              <div className="rounded-2xl overflow-hidden border border-green-200 shadow-lg">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBSSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBicmFpbnxlbnwxfHx8fDE3Njk2NDk2OTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="AI Technology"
-                  className="w-full h-[500px] object-cover"
+                  src="/assets/img/bridge.jpg"
+                  alt="Da Nang Night Bridge"
+                  className="w-full h-[350px] object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               </div>
             </div>
-          </ScrollAnimation>
 
-          <div className="h-[500px] relative">
-            <CardSwap
-              cardDistance={60}
-              verticalDistance={70}
-              delay={5000}
-              pauseOnHover={false}
-              className="!right-auto !bottom-auto !top-1/2 !left-1/2 !-translate-x-1/2 !-translate-y-[35%]"
-            >
-              <Card>
-                <div className="relative group h-full">
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-8 rounded-2xl border border-cyan-500/30 hover:border-cyan-500/60 transition-all h-full">
-                    <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center mb-6">
-                      <svg
-                        className="w-8 h-8 text-white"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                        />
-                      </svg>
-                    </div>
-                    <h3 className="text-2xl mb-3 text-white font-semibold">
-                      Artificial Intelligence
-                    </h3>
-                    <p className="text-slate-300 leading-relaxed">
-                      Nghiên cứu và phát triển các giải pháp AI tiên tiến,
-                      machine learning, deep learning và natural language
-                      processing cho thị trường Việt Nam và khu vực.
-                    </p>
-                  </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {(t('aboutDAB.danangFeatures', { returnObjects: true }) as any[]).map((feature, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-6 rounded-xl border border-green-200 hover:shadow-md transition-all"
+                >
+                  <h4 className="text-lg mb-2 text-gray-900 font-semibold">
+                    {feature.title}
+                  </h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    {feature.description}
+                  </p>
                 </div>
-              </Card>
-              <Card>
-                <div className="relative group h-full">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity"></div>
-                  <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-8 rounded-2xl border border-blue-500/30 hover:border-blue-500/60 transition-all h-full">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center mb-6">
-                      <svg
-                        className="w-8 h-8 text-white"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                        />
-                      </svg>
-                    </div>
-                    <h3 className="text-2xl mb-3 text-white font-semibold">
-                      Blockchain Technology
-                    </h3>
-                    <p className="text-slate-300 leading-relaxed">
-                      Xây dựng giải pháp blockchain an toàn, minh bạch và hiệu
-                      quả cho doanh nghiệp, smart contracts, DeFi và Web3
-                      applications.
-                    </p>
-                  </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* VIFC Section */}
+        <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+            <div className="order-2 lg:order-1">
+              <div className="rounded-2xl overflow-hidden border border-green-200 shadow-lg">
+                <ImageWithFallback
+                  src="/assets/img/high.png"
+                  alt="Vietnam International Finance Center"
+                  className="w-full h-[400px] object-cover"
+                />
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <h3 className="text-3xl md:text-4xl font-bold mb-6 text-green-600">
+                {t('aboutDAB.vifcTitle')}
+              </h3>
+              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                {t('aboutDAB.vifcDescription')}
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {(t('aboutDAB.vifcFeatures', { returnObjects: true }) as any[]).map((feature, index) => (
+              <div
+                key={index}
+                className="bg-white p-8 rounded-2xl border border-green-200 hover:border-green-400 hover:shadow-lg transition-all"
+              >
+                <div className="w-14 h-14 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                  {index === 0 && <Globe className="w-7 h-7 text-white" />}
+                  {index === 1 && <Shield className="w-7 h-7 text-white" />}
+                  {index === 2 && <Network className="w-7 h-7 text-white" />}
                 </div>
-              </Card>
-              <Card className="p-4 space-y-6">
-                {features?.map((feature, index) => {
-                  const Icon = feature.icon;
-                  return (
-                    <div
-                      key={index}
-                      className="flex gap-4 p-6 bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all group"
-                    >
-                      <div>
-                        <h4 className="text-sm mb-2 text-white font-semibold">
-                          {feature.title}
-                        </h4>
-                        <p className="text-xs text-slate-300 leading-relaxed">
-                          {feature.description}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </Card>
-            </CardSwap>
+                <h4 className="text-xl mb-3 text-gray-900 font-semibold">
+                  {feature.title}
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

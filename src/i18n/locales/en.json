@@ -8,11 +8,11 @@
   },
   "hero": {
     "comingSoon": "Coming soon to Da Nang",
-    "title1": "DAB-Lab",
-    "title2": "AI & Blockchain",
-    "title3": "Innovation Hub",
+    "title1": "The Future of",
+    "title2": "Innovative Sustainable",
+    "title3": "Finance",
     "textType": [
-      "R&D space located at Da Nang Software Center",
+      "The premier incubator and regulatory sandbox in Central Vietnam. We empower startups to build Innovative Fintech solutions (with a focus in AI, Blockchain, and Sustainable Finance) under a secure and international legal framework with privileged access to the fast growing Vietnamese market.",
       "The most dynamic technology hub in Central Vietnam"
     ],
     "stats": {
@@ -20,7 +20,7 @@
       "projects": "Projects",
       "events": "Events"
     },
-    "cta_join": "Join DAB-Lab",
+    "cta_join": "Join DFL",
     "cta_learn": "Learn More",
     "stat1_label": "Lower costs",
     "stat2_label": "Central Hub",
@@ -29,121 +29,129 @@
     "explore": "Explore"
   },
   "aboutDAB": {
-    "badge": "About DAB-Lab",
-    "titlePrefix": "Introduction to",
-    "titleSuffix": "DAB-Lab",
-    "description": "R&D space located at the Da Nang Software Center — the most dynamic technology hub in Central Vietnam.",
-    "features": [
+    "badge": "About Us",
+    "title": "The Future of Finance Starts in Da Nang",
+    "subtitle": "We are building the infrastructure for the next generation of financial technology in Vietnam's most livable city.",
+    "dflTitle": "Da Nang Fintech Lab",
+    "dflDescription": "At the core of the ecosystem is DFL. We are the operational engine connecting policy with practice. DFL provides the physical space, the data infrastructure, and the AI tools necessary for startups to build compliant, cutting-edge financial products. We bridge the gap between traditional banking and the decentralized future.",
+    "teamFeatures": [
       {
-        "title": "Project-Based",
-        "description": "Participating companies on a project-basis, flexible and efficient"
+        "title": "International Team",
+        "description": "Bringing diverse perspectives and global experience to drive innovation in Vietnam."
       },
       {
-        "title": "Sandbox Policy",
-        "description": "Benefit from the city's sandbox policy for AI and new technologies"
+        "title": "Local Expertise",
+        "description": "Deep understanding of the Vietnamese market, regulations, and cultural nuance."
       },
       {
-        "title": "Testing Environment",
-        "description": "Flexible environment, reduced legal barriers, accelerated innovation"
+        "title": "World Experts in Fintech x AI",
+        "description": "Pioneering the intersection of financial services and artificial intelligence."
+      }
+    ],
+    "danangTitle": "Da Nang: The Innovation Hub",
+    "danangDescription": "Known for its stunning coastline and high quality of life, Da Nang is rapidly transforming into Vietnam's premier hub for technology and innovation. With a strategic location, modern infrastructure, and a forward-thinking government, the city attracts top talent and investment from across the globe.",
+    "danangFeatures": [
+      {
+        "title": "High Quality of Life",
+        "description": "A perfect blend of urban convenience and natural beauty, attracting global talent."
+      },
+      {
+        "title": "Strategic Location",
+        "description": "Central gateway connecting major Asian economies and markets."
+      },
+      {
+        "title": "Skilled Educated Young Workforce",
+        "description": "Access to a vibrant talent pool from top universities and technical institutes."
+      }
+    ],
+    "vifcTitle": "Vietnam International Finance Center",
+    "vifcDescription": "The VIFC is a policy sandbox and economic zone designed to rival global financial hubs. It offers regulatory flexibility, tax incentives, and a world-class environment for financial institutions, fintech startups, and venture capital firms to collaborate and scale.",
+    "vifcFeatures": [
+      {
+        "title": "Policy Sandbox",
+        "description": "A safe environment to test and deploy innovative financial technologies."
+      },
+      {
+        "title": "Robust Legal Framework",
+        "description": "Clear regulations and protections creating a secure environment for innovation."
+      },
+      {
+        "title": "Global Connectivity",
+        "description": "Seamless integration with international financial markets and partners."
       }
     ]
   },
   "whyChoose": {
-    "badge": "Competitive advantages",
-    "title": "Why choose",
-    "titleHighlight": "DAB-Lab?",
-    "description": "We bring unique advantages that help your business grow quickly and sustainably",
-    "advantages": [
-      {
-        "title": "Sandbox Policy",
-        "description": "Da Nang is piloting special mechanisms for AI, fintech, blockchain"
-      },
-      {
-        "title": "Optimal costs",
-        "description": "40-50% lower operating costs compared to Ho Chi Minh City and Hanoi"
-      },
-      {
-        "title": "Quality of life",
-        "description": "Most liveable city, attracting and retaining tech talent"
-      },
-      {
-        "title": "Ecosystem",
-        "description": "Direct connection with government, universities, and startup community"
-      }
-    ],
-    "cityTitle": "Da Nang -",
-    "cityTitleHighlight": "Dynamic technology hub",
-    "cityFeatures": [
-      {
-        "title": "Strategic location",
-        "description": "Central Vietnam hub with convenient connectivity to major cities and ASEAN countries"
-      },
-      {
-        "title": "Preferential policies",
-        "description": "Special policies for AI, fintech, blockchain from local government"
-      },
-      {
-        "title": "Innovation environment",
-        "description": "Modern coastal city with comfortable and innovative working environment"
-      }
-    ],
+    "badge": "Our Strategic Vision",
+    "title": "Building the",
+    "titleHighlight": "Silicon Valley of Central Vietnam",
+    "description": "Da Nang FinTech Lab (DFL) is a strategic initiative under the International Financial Centre (IFC) Da Nang.",
+    "subtitle1": "Complementing the Ecosystems of HCMC & Singapore",
+    "description1": "Operated by Crossfund and Vcap Partners, DFL is designed to position Da Nang as a key node in Southeast Asia's financial innovation network.",
+    "description2": "We are not just building a workspace; we are constructing a regulatory sandbox and innovation hub that leverages Da Nang's unique advantages - high quality of life, emerging tech talent, and strategic location - to foster the next generation of green finance and digital assets.",
+    "missionBadge": "Da Nang Fintech Hub",
+    "missionTitle": "Our 2030",
+    "missionTitleHighlight": "Mission",
+    "missionDescription": "Ambitious targets driving real economic impact for Central Vietnam.",
     "stats": {
-      "costReduction": "40-50%",
-      "costReductionLabel": "Reduced operating costs",
-      "ranking": "#1",
-      "rankingLabel": "Most liveable city VN",
-      "universities": "10+",
-      "universitiesLabel": "Universities",
-      "techCompanies": "500+",
-      "techCompaniesLabel": "Tech companies"
+      "startups": "200",
+      "startupsLabel": "Startups Incubated",
+      "startupsDescription": "Nurturing high-growth ventures in AI, Blockchain, and Green Finance.",
+      "jobs": "2,000",
+      "jobsLabel": "High-Quality Jobs",
+      "jobsDescription": "Creating careers for the next generation of Vietnamese tech talent.",
+      "investment": "$200M",
+      "investmentLabel": "Investment Attracted",
+      "investmentDescription": "Direct foreign investment into Da Nang's digital economy."
     }
   },
   "forWho": {
-    "badge": "Target audience",
-    "title": "Who is",
-    "titleSuffix": "DAB-Lab for?",
-    "description": "We serve various entities from startups to large enterprises, from local to international teams",
-    "targetAudience": [
+    "badge": "Regulatory Sandbox",
+    "title": "Vietnam's First",
+    "titleSuffix": "Regulatory Sandbox",
+    "description": "A secure testing environment supervised by the State Bank of Vietnam (SBV). Pilot new technologies - including digital assets and P2P lending - safely and legally.",
+    "features": [
       {
-        "title": "AI/Blockchain Startups",
-        "description": "Looking for testing environment, product development and market access",
-        "benefits": ["Sandbox environment", "Low costs", "Legal support"]
+        "title": "Safe Testing Ground",
+        "description": "Test your innovations in a live market environment with regulatory guidance."
       },
       {
-        "title": "Technology companies",
-        "description": "Want R&D in Vietnam with optimal costs and high quality",
-        "benefits": ["Human resources", "Modern infrastructure", "Preferential policies"]
+        "title": "SBV Oversight",
+        "description": "Direct supervision and regular feedback loops with the State Bank of Vietnam ensure your product meets compliance standards from day one."
       },
       {
-        "title": "International teams",
-        "description": "Need a base in Southeast Asia for regional development and market expansion",
-        "benefits": ["Strategic location", "Visa support", "Expat community"]
+        "title": "Live Testing",
+        "description": "Deploy to real users in a controlled environment. Validate your business model and technology with actual market data."
       },
       {
-        "title": "Enterprises",
-        "description": "Want to pilot AI solutions within sandbox framework and digital transformation",
-        "benefits": ["Expert consulting", "PoC support", "Partner connection"]
+        "title": "New Frontiers",
+        "description": "Specifically designed for emerging technologies including Digital Assets, P2P Lending, and Blockchain-based financial services."
       }
     ],
-    "ecosystemTitle": "Join the",
-    "ecosystemTitleHighlight": "innovation ecosystem",
-    "ecosystemDescription": "DAB-Lab is not just a workspace, but a complete ecosystem with all the necessary elements for you to develop and succeed.",
-    "ecosystemFeatures": [
+    "processTitle": "The Sandbox",
+    "processTitleHighlight": "Process",
+    "processSteps": [
       {
-        "title": "Community connection",
-        "description": "Meet and collaborate with leading AI and blockchain experts in the region"
+        "step": "1",
+        "title": "Application & Review",
+        "description": "Submit your proposal. We evaluate based on innovation, consumer benefit, and readiness."
       },
       {
-        "title": "Investment support",
-        "description": "Connect with investment funds and angel investors interested in AI/Blockchain technology"
+        "step": "2",
+        "title": "Testing Parameters",
+        "description": "Define scope, duration, and safeguards. Set clear KPIs for success."
       },
       {
-        "title": "Talent development",
-        "description": "Training and mentoring programs from leading experts"
+        "step": "3",
+        "title": "Live Deployment",
+        "description": "Launch to a limited user base under supervision. Regular reporting and monitoring."
+      },
+      {
+        "step": "4",
+        "title": "Exit & Scale",
+        "description": "Upon successful completion, receive authorization to scale operations across Vietnam."
       }
-    ],
-    "visualTitle": "Advanced Technology",
-    "visualDescription": "Blockchain, AI, and other breakthrough technologies"
+    ]
   },
   "features": {
     "title": "Our Core Capabilities",
@@ -209,7 +217,7 @@
   },
   "contact": {
     "badge": "Contact us",
-    "title": "Ready to build with DAB-Lab?",
+    "title": "Ready to build with DFL?",
     "description": "Sign up for a lab tour or schedule a discussion. Let's build the future of AI in Da Nang together.",
     "form": {
       "title": "Join us",
@@ -242,7 +250,7 @@
       },
       "email": {
         "title": "Email",
-        "text": "hello@dab-lab.vn"
+        "text": "hello@DFL.vn"
       },
       "hours": {
         "title": "Working hours",
@@ -256,12 +264,13 @@
     }
   },
   "footer": {
-    "slogan": "Building the future of AI & Blockchain in Da Nang",
+    "slogan": "The Future of Green Finance & Digital Innovation",
+    "title": "The Future of Innovative Sustainable Finance",
     "quickLinks": "Quick Links",
     "address": "Address",
     "addressText": "Da Nang Software Center",
     "city": "Da Nang, Vietnam",
     "innovationHub": "Central Vietnam Technology Hub",
-    "copyright": "Building the future of AI in Da Nang together."
+    "copyright": "All rights reserved."
   }
 }

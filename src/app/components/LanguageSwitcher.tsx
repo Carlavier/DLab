@@ -23,7 +23,7 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2 text-slate-300 hover:text-cyan-400 transition-colors rounded-lg hover:bg-slate-800/50"
+        className="flex items-center gap-2 px-3 py-2 text-gray-700 hover:text-green-600 transition-colors rounded-lg hover:bg-green-50 border border-green-200"
       >
         <Languages className="h-5 w-5" />
         <span className="hidden sm:flex items-center gap-1">
@@ -41,19 +41,19 @@ export default function LanguageSwitcher() {
           />
           
           {/* Dropdown menu */}
-          <div className="absolute right-0 top-full mt-2 bg-slate-900 border border-slate-700 rounded-lg shadow-lg min-w-[160px] z-20">
+          <div className="absolute right-0 top-full mt-2 bg-white border border-green-200 rounded-lg shadow-lg min-w-[160px] z-20">
             {languages.map((lang) => (
               <button
                 key={lang.code}
                 onClick={() => changeLanguage(lang.code)}
-                className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-slate-800 transition-colors first:rounded-t-lg last:rounded-b-lg"
+                className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-green-50 transition-colors first:rounded-t-lg last:rounded-b-lg"
               >
-                <span className="flex items-center gap-2 text-slate-300">
+                <span className="flex items-center gap-2 text-gray-700">
                   <span>{lang.flag}</span>
                   <span>{lang.name}</span>
                 </span>
                 {i18n.language === lang.code && (
-                  <Check className="h-4 w-4 text-cyan-400" />
+                  <Check className="h-4 w-4 text-green-600" />
                 )}
               </button>
             ))}

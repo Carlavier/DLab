@@ -1,218 +1,226 @@
 {
   "nav": {
     "about": "Giới thiệu",
-    "why": "Lợi thế",
-    "who": "Dành cho ai",
+    "why": "Tầm nhìn",
+    "who": "Sandbox",
     "contact": "Liên hệ",
     "join": "Tham gia ngay"
   },
   "hero": {
     "comingSoon": "Sắp ra mắt tại Đà Nẵng",
-    "title1": "DAB-Lab",
-    "title2": "AI & Blockchain",
-    "title3": "Innovation Hub",
+    "title1": "Tương lai của",
+    "title2": "Tài chính Bền vững",
+    "title3": "Sáng tạo",
     "textType": [
-      "Không gian nghiên cứu và phát triển đặt tại Trung tâm Phần mềm Đà Nẵng",
-      "Hub công nghệ năng động nhất miền Trung Việt Nam"
+      "Vườn ươm và sandbox quy định hàng đầu tại miền Trung Việt Nam. Chúng tôi trao quyền cho các startup xây dựng giải pháp Fintech sáng tạo (tập trung vào AI, Blockchain và Tài chính Bền vững) dưới khung pháp lý an toàn và quốc tế với quyền truy cập đặc quyền vào thị trường Việt Nam đang phát triển nhanh chóng.",
+      "Trung tâm công nghệ năng động nhất miền Trung Việt Nam"
     ],
     "stats": {
       "members": "Thành viên",
       "projects": "Dự án",
       "events": "Sự kiện"
     },
-    "cta_join": "Tham gia DAB-Lab",
+    "cta_join": "Tham gia DFL",
     "cta_learn": "Tìm hiểu thêm",
     "stat1_label": "Chi phí thấp hơn",
-    "stat2_label": "Hub miền Trung",
-    "stat3_label": "Chính sách đặc thù",
+    "stat2_label": "Trung tâm miền Trung",
+    "stat3_label": "Chính sách đặc biệt",
     "stat4_label": "Môi trường Lab",
     "explore": "Khám phá"
   },
   "aboutDAB": {
-    "badge": "Về DAB-Lab",
-    "titlePrefix": "Giới thiệu",
-    "titleSuffix": "DAB-Lab",
-    "description": "Không gian nghiên cứu và phát triển đặt tại Trung tâm Phần mềm Đà Nẵng — hub công nghệ năng động nhất miền Trung Việt Nam.",
-    "features": [
+    "badge": "Về chúng tôi",
+    "title": "Tương lai của Tài chính Bắt đầu tại Đà Nẵng",
+    "subtitle": "Chúng tôi đang xây dựng cơ sở hạ tầng cho thế hệ công nghệ tài chính tiếp theo tại thành phố đáng sống nhất Việt Nam.",
+    "dflTitle": "Phòng thí nghiệm Fintech Đà Nẵng",
+    "dflDescription": "Trung tâm của hệ sinh thái là DFL. Chúng tôi là động cơ vận hành kết nối chính sách với thực tiễn. DFL cung cấp không gian vật lý, cơ sở hạ tầng dữ liệu và các công cụ AI cần thiết để các startup xây dựng các sản phẩm tài chính tiên tiến và tuân thủ. Chúng tôi thu hẹp khoảng cách giữa ngân hàng truyền thống và tương lai phi tập trung.",
+    "teamFeatures": [
       {
-        "title": "Project-Based",
-        "description": "Các công ty tham gia theo dạng project-based, linh hoạt và hiệu quả"
+        "title": "Đội ngũ Quốc tế",
+        "description": "Mang đến những quan điểm đa dạng và kinh nghiệm toàn cầu để thúc đẩy đổi mới tại Việt Nam."
       },
       {
-        "title": "Chính sách Sandbox",
-        "description": "Được hưởng chính sách sandbox của thành phố về AI và công nghệ mới"
+        "title": "Chuyên môn Địa phương",
+        "description": "Hiểu biết sâu sắc về thị trường, quy định và sắc thái văn hóa Việt Nam."
       },
       {
-        "title": "Môi trường thử nghiệm",
-        "description": "Môi trường linh hoạt, giảm rào cản pháp lý, tăng tốc innovation"
+        "title": "Chuyên gia Hàng đầu Thế giới về Fintech x AI",
+        "description": "Tiên phong tại điểm giao thoa của dịch vụ tài chính và trí tuệ nhân tạo."
+      }
+    ],
+    "danangTitle": "Đà Nẵng: Trung tâm Đổi mới",
+    "danangDescription": "Được biết đến với bờ biển tuyệt đẹp và chất lượng cuộc sống cao, Đà Nẵng đang nhanh chóng chuyển mình thành trung tâm hàng đầu của Việt Nam về công nghệ và đổi mới. Với vị trí chiến lược, cơ sở hạ tầng hiện đại và chính quyền có tầm nhìn xa, thành phố thu hút nhân tài và đầu tư hàng đầu từ khắp nơi trên thế giới.",
+    "danangFeatures": [
+      {
+        "title": "Chất lượng Cuộc sống Cao",
+        "description": "Sự kết hợp hoàn hảo giữa tiện nghi đô thị và vẻ đẹp thiên nhiên, thu hút nhân tài toàn cầu."
+      },
+      {
+        "title": "Vị trí Chiến lược",
+        "description": "Cổng trung tâm kết nối các nền kinh tế và thị trường lớn châu Á."
+      },
+      {
+        "title": "Lực lượng Lao động Trẻ có Kỹ năng và Trình độ cao",
+        "description": "Tiếp cận nguồn nhân tài sôi động từ các trường đại học và viện kỹ thuật hàng đầu."
+      }
+    ],
+    "vifcTitle": "Trung tâm Tài chính Quốc tế Việt Nam",
+    "vifcDescription": "VIFC là sandbox chính sách và khu kinh tế được thiết kế để cạnh tranh với các trung tâm tài chính toàn cầu. Nó cung cấp sự linh hoạt về quy định, ưu đãi thuế và môi trường đẳng cấp thế giới cho các tổ chức tài chính, startup fintech và các công ty vốn đầu tư mạo hiểm để hợp tác và mở rộng quy mô.",
+    "vifcFeatures": [
+      {
+        "title": "Sandbox Chính sách",
+        "description": "Môi trường an toàn để thử nghiệm và triển khai các công nghệ tài chính đổi mới."
+      },
+      {
+        "title": "Khung Pháp lý Vững chắc",
+        "description": "Quy định và bảo vệ rõ ràng tạo môi trường an toàn cho đổi mới."
+      },
+      {
+        "title": "Kết nối Toàn cầu",
+        "description": "Tích hợp liền mạch với các thị trường và đối tác tài chính quốc tế."
       }
     ]
   },
   "whyChoose": {
-    "badge": "Lợi thế cạnh tranh",
-    "title": "Tại sao chọn",
-    "titleHighlight": "DAB-Lab?",
-    "description": "Chúng tôi mang đến những lợi thế độc đáo giúp doanh nghiệp của bạn phát triển nhanh chóng và bền vững",
-    "advantages": [
-      {
-        "title": "Chính sách Sandbox",
-        "description": "Đà Nẵng đang thí điểm cơ chế đặc thù cho AI, fintech, blockchain"
-      },
-      {
-        "title": "Chi phí tối ưu",
-        "description": "Vận hành thấp hơn 40-50% so với TP.HCM và Hà Nội"
-      },
-      {
-        "title": "Chất lượng sống",
-        "description": "Thành phố đáng sống, thu hút và giữ chân nhân tài tech"
-      },
-      {
-        "title": "Hệ sinh thái",
-        "description": "Kết nối trực tiếp với chính quyền, đại học, và cộng đồng startup"
-      }
-    ],
-    "cityTitle": "Đà Nẵng -",
-    "cityTitleHighlight": "Hub công nghệ năng động",
-    "cityFeatures": [
-      {
-        "title": "Vị trí chiến lược",
-        "description": "Trung tâm miền Trung, kết nối thuận tiện với các thành phố lớn và các nước ASEAN"
-      },
-      {
-        "title": "Chính sách ưu đãi",
-        "description": "Chính sách đặc thù cho AI, fintech, blockchain từ chính quyền địa phương"
-      },
-      {
-        "title": "Môi trường sáng tạo",
-        "description": "Thành phố biển hiện đại, môi trường làm việc thoải mái và sáng tạo"
-      }
-    ],
+    "badge": "Tầm nhìn Chiến lược của Chúng tôi",
+    "title": "Xây dựng",
+    "titleHighlight": "Thung lũng Silicon của miền Trung Việt Nam",
+    "description": "Phòng thí nghiệm FinTech Đà Nẵng (DFL) là một sáng kiến chiến lược thuộc Trung tâm Tài chính Quốc tế (IFC) Đà Nẵng.",
+    "subtitle1": "Bổ sung cho Hệ sinh thái của TP.HCM & Singapore",
+    "description1": "Được vận hành bởi Crossfund và Vcap Partners, DFL được thiết kế để định vị Đà Nẵng như một nút quan trọng trong mạng lưới đổi mới tài chính Đông Nam Á.",
+    "description2": "Chúng tôi không chỉ xây dựng một không gian làm việc; chúng tôi đang xây dựng một sandbox quy định và trung tâm đổi mới tận dụng những lợi thế độc đáo của Đà Nẵng - chất lượng cuộc sống cao, nhân tài công nghệ mới nổi và vị trí chiến lược - để nuôi dưỡng thế hệ tiếp theo của tài chính xanh và tài sản kỹ thuật số.",
+    "missionBadge": "Trung tâm Fintech Đà Nẵng",
+    "missionTitle": "Sứ mệnh 2030",
+    "missionTitleHighlight": "của Chúng tôi",
+    "missionDescription": "Các mục tiêu đầy tham vọng thúc đẩy tác động kinh tế thực sự cho miền Trung Việt Nam.",
     "stats": {
-      "costReduction": "40-50%",
-      "costReductionLabel": "Giảm chi phí vận hành",
-      "ranking": "#1",
-      "rankingLabel": "Thành phố đáng sống VN",
-      "universities": "10+",
-      "universitiesLabel": "Trường đại học",
-      "techCompanies": "500+",
-      "techCompaniesLabel": "Công ty công nghệ"
+      "startups": "200",
+      "startupsLabel": "Startup được Ươm tạo",
+      "startupsDescription": "Nuôi dưỡng các doanh nghiệp tăng trưởng cao trong AI, Blockchain và Tài chính Xanh.",
+      "jobs": "2,000",
+      "jobsLabel": "Việc làm Chất lượng Cao",
+      "jobsDescription": "Tạo ra sự nghiệp cho thế hệ tài năng công nghệ Việt Nam tiếp theo.",
+      "investment": "$200M",
+      "investmentLabel": "Đầu tư Thu hút",
+      "investmentDescription": "Đầu tư trực tiếp nước ngoài vào nền kinh tế số của Đà Nẵng."
     }
   },
   "forWho": {
-    "badge": "Đối tượng mục tiêu",
-    "title": "DAB-Lab",
-    "titleSuffix": "dành cho ai?",
-    "description": "Chúng tôi phục vụ các đối tượng từ startup đến doanh nghiệp lớn, từ team local đến quốc tế",
-    "targetAudience": [
+    "badge": "Sandbox Quy định",
+    "title": "Sandbox Quy định",
+    "titleSuffix": "Đầu tiên của Việt Nam",
+    "description": "Môi trường thử nghiệm an toàn được giám sát bởi Ngân hàng Nhà nước Việt Nam (SBV). Thí điểm các công nghệ mới - bao gồm tài sản kỹ thuật số và cho vay P2P - một cách an toàn và hợp pháp.",
+    "features": [
       {
-        "title": "Startup AI/Blockchain",
-        "description": "Đang tìm môi trường thử nghiệm, phát triển sản phẩm và tiếp cận thị trường",
-        "benefits": ["Môi trường sandbox", "Chi phí thấp", "Hỗ trợ pháp lý"]
+        "title": "Sân thử nghiệm An toàn",
+        "description": "Thử nghiệm các đổi mới của bạn trong môi trường thị trường thực với hướng dẫn quy định."
       },
       {
-        "title": "Công ty công nghệ",
-        "description": "Muốn R&D tại Việt Nam với chi phí tối ưu và chất lượng cao",
-        "benefits": ["Nguồn nhân lực", "Hạ tầng hiện đại", "Chính sách ưu đãi"]
+        "title": "Giám sát của SBV",
+        "description": "Giám sát trực tiếp và vòng phản hồi thường xuyên với Ngân hàng Nhà nước Việt Nam đảm bảo sản phẩm của bạn đáp ứng tiêu chuẩn tuân thủ ngay từ ngày đầu tiên."
       },
       {
-        "title": "Team quốc tế",
-        "description": "Cần base tại Đông Nam Á để phát triển và mở rộng thị trường khu vực",
-        "benefits": ["Vị trí chiến lược", "Visa support", "Cộng đồng expat"]
+        "title": "Thử nghiệm Thực tế",
+        "description": "Triển khai cho người dùng thực trong môi trường được kiểm soát. Xác thực mô hình kinh doanh và công nghệ của bạn với dữ liệu thị trường thực tế."
       },
       {
-        "title": "Doanh nghiệp",
-        "description": "Muốn pilot giải pháp AI trong khuôn khổ sandbox và chuyển đổi số",
-        "benefits": ["Tư vấn chuyên môn", "PoC support", "Kết nối đối tác"]
+        "title": "Biên giới Mới",
+        "description": "Được thiết kế đặc biệt cho các công nghệ mới nổi bao gồm Tài sản Kỹ thuật số, Cho vay P2P và các dịch vụ tài chính dựa trên Blockchain."
       }
     ],
-    "ecosystemTitle": "Tham gia",
-    "ecosystemTitleHighlight": "hệ sinh thái đổi mới",
-    "ecosystemDescription": "DAB-Lab không chỉ là một không gian làm việc, mà là một hệ sinh thái hoàn chỉnh với đầy đủ các yếu tố cần thiết để bạn phát triển và thành công.",
-    "ecosystemFeatures": [
+    "processTitle": "Quy trình",
+    "processTitleHighlight": "Sandbox",
+    "processSteps": [
       {
-        "title": "Kết nối cộng đồng",
-        "description": "Gặp gỡ và hợp tác với các chuyên gia AI, blockchain hàng đầu trong khu vực"
+        "step": "1",
+        "title": "Đăng ký & Xét duyệt",
+        "description": "Nộp đề xuất của bạn. Chúng tôi đánh giá dựa trên sự đổi mới, lợi ích người tiêu dùng và sự sẵn sàng."
       },
       {
-        "title": "Hỗ trợ đầu tư",
-        "description": "Kết nối với các quỹ đầu tư và angel investors quan tâm đến công nghệ AI/Blockchain"
+        "step": "2",
+        "title": "Thông số Thử nghiệm",
+        "description": "Xác định phạm vi, thời lượng và biện pháp bảo vệ. Thiết lập các KPI rõ ràng cho thành công."
       },
       {
-        "title": "Phát triển tài năng",
-        "description": "Chương trình training và mentoring từ các chuyên gia hàng đầu"
+        "step": "3",
+        "title": "Triển khai Thực tế",
+        "description": "Ra mắt cho một nhóm người dùng hạn chế dưới sự giám sát. Báo cáo và giám sát thường xuyên."
+      },
+      {
+        "step": "4",
+        "title": "Thoát & Mở rộng",
+        "description": "Sau khi hoàn thành thành công, nhận được ủy quyền để mở rộng hoạt động trên toàn Việt Nam."
       }
-    ],
-    "visualTitle": "Công nghệ tiên tiến",
-    "visualDescription": "Blockchain, AI, và các công nghệ đột phá khác"
+    ]
   },
   "features": {
-    "title": "Khả năng cốt lõi của chúng tôi",
-    "description": "Kết hợp công nghệ blockchain và trí tuệ nhân tạo để tạo ra các giải pháp sáng tạo cho tương lai",
+    "title": "Năng lực Cốt lõi của Chúng tôi",
+    "description": "Kết hợp công nghệ blockchain và trí tuệ nhân tạo để tạo ra các giải pháp đổi mới cho tương lai",
     "items": [
       {
         "title": "Đổi mới Blockchain",
         "description": "Phát triển các giải pháp blockchain an toàn và có thể mở rộng cho các ứng dụng doanh nghiệp và công cộng."
       },
       {
-        "title": "Trí tuệ nhân tạo",
+        "title": "Trí tuệ Nhân tạo",
         "description": "Tạo ra các mô hình AI phù hợp với ngôn ngữ, văn hóa và nhu cầu kinh doanh Việt Nam."
       },
       {
-        "title": "Bảo mật hàng đầu",
+        "title": "Bảo mật Đầu tiên",
         "description": "Triển khai các giao thức bảo mật đẳng cấp thế giới để bảo vệ dữ liệu và giao dịch."
       },
       {
-        "title": "Hiệu suất cao",
+        "title": "Hiệu suất Cao",
         "description": "Tối ưu hóa hệ thống về tốc độ và hiệu quả mà không ảnh hưởng đến chất lượng."
       },
       {
-        "title": "Phân tích dữ liệu",
-        "description": "Phân tích nâng cao và thông tin chi tiết được hỗ trợ bởi các thuật toán machine learning."
+        "title": "Phân tích Dữ liệu",
+        "description": "Phân tích nâng cao và thông tin chi tiết được hỗ trợ bởi các thuật toán học máy."
       },
       {
-        "title": "Smart Contracts",
-        "description": "Phát triển các smart contract thông minh để tự động hóa và minh bạch."
+        "title": "Hợp đồng Thông minh",
+        "description": "Phát triển các hợp đồng thông minh để tự động hóa và minh bạch."
       }
     ]
   },
   "location": {
-    "title": "Tọa lạc tại Đà Nẵng xinh đẹp",
+    "title": "Tọa lạc tại Đà Nẵng Xinh đẹp",
     "description": "Một thiên đường ven biển nơi sự đổi mới gặp gỡ thiên nhiên - môi trường hoàn hảo cho sự sáng tạo và nghiên cứu đột phá",
     "features": [
       {
-        "title": "Vị trí chiến lược",
+        "title": "Vị trí Chiến lược",
         "description": "Đà Nẵng là thành phố đáng sống nhất Việt Nam, vị trí hoàn hảo tại miền Trung với cơ sở hạ tầng đẳng cấp thế giới và kết nối với các trung tâm công nghệ lớn châu Á."
       },
       {
-        "title": "Cảm hứng ven biển",
+        "title": "Cảm hứng Ven biển",
         "description": "Được bao quanh bởi những bãi biển nguyên sơ và sông Hàn, vị trí của chúng tôi mang đến một môi trường tươi mát kích thích sự sáng tạo và đổi mới."
       },
       {
-        "title": "Xuất sắc quanh năm",
+        "title": "Xuất sắc Quanh năm",
         "description": "Khí hậu hoàn hảo và tiện nghi hiện đại khiến Đà Nẵng trở thành địa điểm lý tưởng để thu hút tài năng hàng đầu từ khắp nơi trên thế giới."
       },
       {
-        "title": "Di sản văn hóa",
+        "title": "Di sản Văn hóa",
         "description": "Gần các di tích UNESCO như Phố cổ Hội An và Kinh thành Huế cung cấp bối cảnh văn hóa phong phú cho công việc của chúng tôi."
       }
     ],
     "stats": {
       "ranking": "#1",
-      "rankingLabel": "Thành phố đáng sống nhất",
+      "rankingLabel": "Thành phố Đáng sống Nhất",
       "beaches": "30km",
-      "beachesLabel": "Bãi biển đẹp",
+      "beachesLabel": "Bãi biển Đẹp",
       "population": "1M+",
       "populationLabel": "Dân số",
       "unescoSites": "3",
-      "unescoSitesLabel": "Di tích UNESCO gần đó"
+      "unescoSitesLabel": "Di tích UNESCO Gần đó"
     }
   },
   "contact": {
     "badge": "Liên hệ với chúng tôi",
-    "title": "Sẵn sàng build cùng DAB-Lab?",
-    "description": "Đăng ký tham quan Lab hoặc đặt lịch trao đổi. Cùng xây dựng tương lai AI tại Đà Nẵng.",
+    "title": "Sẵn sàng xây dựng cùng DFL?",
+    "description": "Đăng ký tham quan phòng thí nghiệm hoặc lên lịch thảo luận. Cùng nhau xây dựng tương lai AI tại Đà Nẵng.",
     "form": {
-      "title": "Đăng ký tham gia",
+      "title": "Tham gia chúng tôi",
       "name": "Họ và tên",
       "namePlaceholder": "Nguyễn Văn A",
       "email": "Email",
@@ -223,45 +231,46 @@
       "phonePlaceholder": "+84 123 456 789",
       "projectType": "Loại dự án",
       "projectOptions": {
-        "ai": "AI/Machine Learning",
+        "ai": "AI/Học Máy",
         "blockchain": "Blockchain/Web3",
         "fintech": "Fintech",
         "consulting": "Tư vấn",
         "other": "Khác"
       },
       "message": "Tin nhắn",
-      "messagePlaceholder": "Chia sẻ thêm về dự án của bạn...",
+      "messagePlaceholder": "Cho chúng tôi biết thêm về dự án của bạn...",
       "submit": "Gửi đăng ký",
-      "submitSuccess": "Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ sớm nhất."
+      "submitSuccess": "Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ với bạn sớm."
     },
     "info": {
-      "title": "Thông tin liên hệ",
+      "title": "Thông tin Liên hệ",
       "address": {
         "title": "Địa chỉ",
         "text": "Trung tâm Phần mềm Đà Nẵng\nQuận Ngũ Hành Sơn, Đà Nẵng"
       },
       "email": {
         "title": "Email",
-        "text": "hello@dab-lab.vn"
+        "text": "hello@DFL.vn"
       },
       "hours": {
         "title": "Giờ làm việc",
-        "text": "Thứ 2 - Thứ 6: 8:00 - 17:30\nThứ 7: 8:00 - 12:00"
+        "text": "Thứ Hai - Thứ Sáu: 8:00 - 17:30\nThứ Bảy: 8:00 - 12:00"
       }
     },
     "community": {
-      "title": "Tham gia cộng đồng",
+      "title": "Tham gia Cộng đồng",
       "description": "Kết nối với các chuyên gia AI khác tại Đà Nẵng.",
       "cta": "Tìm hiểu thêm →"
     }
   },
   "footer": {
-    "slogan": "Xây dựng tương lai AI & Blockchain tại Đà Nẵng",
-    "quickLinks": "Liên kết nhanh",
+    "slogan": "Tương lai của Tài chính Xanh & Đổi mới Kỹ thuật số",
+    "title": "Tương lai của Tài chính Bền vững Sáng tạo",
+    "quickLinks": "Liên kết Nhanh",
     "address": "Địa chỉ",
     "addressText": "Trung tâm Phần mềm Đà Nẵng",
     "city": "Đà Nẵng, Việt Nam",
-    "innovationHub": "Hub công nghệ miền Trung",
-    "copyright": "Cùng xây dựng tương lai AI tại Đà Nẵng."
+    "innovationHub": "Trung tâm Công nghệ miền Trung Việt Nam",
+    "copyright": "Bảo lưu mọi quyền."
   }
 }
